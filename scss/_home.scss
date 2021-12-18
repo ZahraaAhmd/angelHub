@@ -94,13 +94,16 @@
             }
             .col-md-auto {
                 @media(min-width: 768px) {
-                    padding-left: 80px;
+                    padding-left: 70px;
                 }
             }
             .list-body {
                 padding-left: 65px;
                 .col-12 {
                     margin-bottom: 32px;
+                }
+                .small-tag {
+                    margin-bottom: 5px;
                 }
                 .more-logos {
                     font-size: 12px;

@@ -169,7 +169,7 @@
     .progress {
         position: absolute;
         top: 146px;
-        width: 100%;
+        width: calc( 100% - 30px);
         max-width: 280px;
         left: auto;
         right: auto;

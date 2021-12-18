@@ -43,23 +43,6 @@ footer {
     .contact-links {
         margin-top: 83px;
         margin-bottom: 63px;
-        font-size: 20px;
-        line-height: 26px;
-        /* identical to box height */
-        text-align: center;
-        letter-spacing: -0.06em;
-        color: $dark;
-        a {
-            color: $dark;
-            margin-left: 24px;
-            transition: all 0.3s ease;
-            i {
-                font-size: 25px;
-            }
-            &:hover {
-                color: $blue
-            }
-        }
     }
     .copyright {
         font-size: 15px;

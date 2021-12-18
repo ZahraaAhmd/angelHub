@@ -1,0 +1,261 @@
+/*** media query styles ****/
+
+@media(max-width:991.98px) {
+    .bg-light .navbar-nav .nav-link {
+        padding: 0 20px;
+    }
+}
+
+@media(max-width:767.98px) {
+    .bg-light {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        .navbar-toggler {
+            width: 35px;
+            height: 35px;
+            background: #F4F4F4;
+            border-radius: 50%;
+            border: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            padding: 7px 0;
+            box-shadow: none !important;
+            span {
+                width: 22px;
+                height: 2px;
+                background: #000000;
+                display: block;
+                &:first-child {
+                    transform: translate(0px, 5px) rotate( -45deg) scalex(1);
+                }
+                &:nth-child(2) {
+                    width: 0;
+                }
+                &:last-child {
+                    width: 22px;
+                    transform: translate(0px, -6px) rotate( 45deg) scalex(1);
+                }
+            }
+            &.collapsed {
+                span {
+                    &:first-child {
+                        transform: translate(0px, 0px) rotate( 0deg) scalex(1);
+                    }
+                    &:nth-child(2) {
+                        width: 18px;
+                    }
+                    &:last-child {
+                        width: 15px;
+                        transform: translate(0px, 0px) rotate(0deg) scalex(1);
+                    }
+                }
+            }
+            &:hover {
+                background: $blue;
+                span {
+                    background: #fff;
+                }
+            }
+        }
+        .upper:not(.collapsed)::after {
+            content: "";
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0px;
+            top: 0px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .navbar-collapse {
+            background: #fff;
+            position: fixed;
+            right: 0;
+            height: 100%;
+            top: 0;
+            width: 300px;
+            padding: 40px 24px 70px 24px;
+            .head {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 42px;
+                text-align: center;
+                letter-spacing: -0.06em;
+                font-family: 'Work Sans', sans-serif;
+                color: #000;
+            }
+            &.show {
+                .social-nav {
+                    position: fixed;
+                    bottom: 40px;
+                    width: 250px;
+                }
+            }
+        }
+        .navbar-nav {
+            margin-top: 50px;
+            .nav-link {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 28px;
+                letter-spacing: -0.06em;
+                color: rgba(0, 0, 0, 0.32);
+                padding: 12px;
+            }
+        }
+        .contact-links {
+            margin-top: 45px;
+        }
+    }
+    .investors {
+        padding-top: 25px;
+        padding-bottom: 110px;
+    }
+    .investors-list .investor .list-body {
+        padding-left: 0;
+    }
+    .investors-list .investor .btn-outline-secondary {
+        padding: 6px 20px 6px 24px;
+        opacity: 1;
+        visibility: visible;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 48px;
+        margin-top: 16px;
+    }
+    .investors-list .investor .list-body .col-12 {
+        margin-bottom: 24px;
+    }
+    .investors-list .investor {
+        margin-bottom: 16px;
+    }
+    .investors-list .investor .list-head {
+        margin-bottom: 32px;
+    }
+}
+
+@media(max-width:575.98px) {
+    h1 {
+        font-size: 48px;
+        line-height: 57px;
+    }
+    .font-20 {
+        font-size: 16px;
+    }
+    .investors-search {
+        margin-top: 32px;
+    }
+    .investors-list .investor {
+        padding: 18px
+    }
+    footer .contact-us {
+        margin-bottom: 13px;
+    }
+    footer .contact-links {
+        margin-top: 23px;
+        margin-bottom: 13px;
+    }
+    .investors-search .form-control {
+        margin-bottom: 0;
+    }
+    .investors-search .form-control.search-input {
+        max-width: 295px
+    }
+    .investors-search .row:first-child {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+    }
+    .investors-search .row:last-child {
+        margin: 0 -12px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding-bottom: 16px;
+        .col-6 {
+            padding-right: 12px;
+            padding-left: 12px;
+            &:first-child {
+                padding-right: 6px;
+            }
+            &:last-child {
+                padding-left: 6px;
+            }
+        }
+    }
+    .investors-search .form-control.form-select {
+        padding-right: 30px;
+        background-size: 12px 6px;
+    }
+    .investor-form {
+        padding-top: 24px;
+        padding-bottom: 30px;
+        h2 {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 28px;
+            max-width: 268px;
+            text-align: left;
+            margin: 0;
+        }
+        .progress {
+            top: 72px;
+            left: 15px;
+        }
+        #q-box__buttons {
+            bottom: -120px
+        }
+        .form-field {
+            margin-top: 65px;
+            background: transparent;
+            padding: 0 0 0 0;
+            margin-bottom: 130px;
+            min-height: 0;
+            .form-control {
+                height: 48px;
+                &.no-border {
+                    border-color: rgba(0, 0, 0, 0.12)
+                }
+            }
+            textarea.form-control {
+                height: 81px;
+            }
+            .pb-3.text-center {
+                text-align: left !important;
+                padding-top: 20px;
+            }
+            .upload-img {
+                width: 54px;
+                height: 54px;
+                display: inline-flex;
+                margin-right: 12px;
+            }
+            .form-icon {
+                margin-top: -32px;
+            }
+        }
+        .comany-step .form-field {
+            padding: 16px;
+            background-color: #f8f8f8;
+            margin-bottom: 170px;
+            min-height: 450px;
+        }
+        #success h4 {
+            font-weight: 600;
+            font-size: 31px;
+            line-height: 37px;
+        }
+        .company .company-logo {
+            margin-bottom: 35px;
+        }
+        .comany-step .form-label {
+            margin: 75px auto;
+        }
+    }
+}
