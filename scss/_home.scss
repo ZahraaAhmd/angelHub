@@ -1,0 +1,149 @@
+/***** investors page styles****/
+
+.investors {
+    padding-top: 55px;
+    padding-bottom: 209px;
+    &-search {
+        margin-top: 24px;
+        max-width: 570px;
+        margin: 24px auto;
+        .form-control {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 42px;
+            margin-bottom: 46px;
+            box-shadow: none !important;
+            outline: none !important;
+            transition: all 0.3s ease;
+            &.search-input {
+                font-size: 18px;
+                line-height: 21px;
+                background: url("../images/search.svg") no-repeat;
+                padding-left: 54px;
+                background-position: left 23px center;
+                background-size: 16px;
+                height: 50px;
+                max-width: 486px;
+                margin-right: auto;
+                margin-left: auto;
+                &::placeholder {
+                    color: rgba($dark, 0.42)
+                }
+                &:focus {
+                    border-color: $blue;
+                }
+            }
+            &.form-select {
+                font-family: 'Work Sans', sans-serif;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                color: $dark;
+                height: 50px;
+                padding-left: 20px;
+                padding-right: 20px;
+                background-image: url("../images/dropdown.svg");
+                background-repeat: no-repeat;
+                background-position: right 20px center;
+                background-size: 12px 6px;
+            }
+        }
+    }
+    &-list {
+        .result-num {
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: -0.02em;
+            color: rgba($dark, 0.6);
+            font-family: 'Work Sans', sans-serif;
+            margin-bottom: 33px;
+            strong {
+                font-weight: 500;
+                color: $dark;
+            }
+        }
+        .investor {
+            width: 100%;
+            max-width: 762px;
+            padding: 24px;
+            margin: 0 auto 24px auto;
+            border: 1px solid $gray;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            .list-head {
+                margin-bottom: 26px;
+                .investor-img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    ;
+                }
+                h3 {
+                    margin-bottom: 6px;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 23px;
+                    color: $dark;
+                    letter-spacing: 0;
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: rgba($dark, 0.4);
+                    margin-bottom: 0;
+                }
+            }
+            .col-md-auto {
+                @media(min-width: 768px) {
+                    padding-left: 80px;
+                }
+            }
+            .list-body {
+                padding-left: 65px;
+                .col-12 {
+                    margin-bottom: 32px;
+                }
+                .more-logos {
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: $dark;
+                    font-family: 'Work Sans', sans-serif;
+                    margin-left: 8px;
+                }
+            }
+            .btn-outline-secondary {
+                border: 2px solid $dark;
+                box-shadow: 0px 6px 16px rgba(0, 69, 255, 0.1);
+                border-radius: 30px;
+                padding: 9.5px 25px 8px 18px;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 19px;
+                color: $dark;
+                transition: all 0.3s ease;
+                opacity: 0;
+                visibility: hidden;
+                img {
+                    margin-left: 12px;
+                    width: 10px;
+                }
+                &:hover {
+                    background: transparent;
+                }
+            }
+            &:hover {
+                background: $light;
+                border-color: $light;
+                .list-body {
+                    .small-tag {
+                        background: #fff;
+                        border-color: #DDDDDD
+                    }
+                }
+                .btn-outline-secondary {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}

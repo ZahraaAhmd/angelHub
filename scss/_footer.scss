@@ -1,0 +1,72 @@
+/**** footer style ****/
+
+footer {
+    font-family: 'Work Sans', sans-serif;
+    .container {
+        max-width: 800px
+    }
+    .col-12 {
+        @media(min-width: 992px) {
+            &:first-child {
+                padding-right: 18px;
+            }
+            &:last-child {
+                padding-left: 18px;
+            }
+        }
+    }
+    .contact-us {
+        background: $light-blue;
+        border-radius: 20px;
+        padding: 20px 20px 30px 20px;
+        img {
+            margin-bottom: 14px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 130.3%;
+            text-align: center;
+            letter-spacing: -0.06em;
+            color: rgba($dark, 0.6);
+            margin-bottom: 10px;
+        }
+        h3 {
+            font-size: 19px;
+            line-height: 22px;
+            text-align: center;
+            letter-spacing: -0.06em;
+            color: $dark;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+    }
+    .contact-links {
+        margin-top: 83px;
+        margin-bottom: 63px;
+        font-size: 20px;
+        line-height: 26px;
+        /* identical to box height */
+        text-align: center;
+        letter-spacing: -0.06em;
+        color: $dark;
+        a {
+            color: $dark;
+            margin-left: 24px;
+            transition: all 0.3s ease;
+            i {
+                font-size: 25px;
+            }
+            &:hover {
+                color: $blue
+            }
+        }
+    }
+    .copyright {
+        font-size: 15px;
+        line-height: 130.3%;
+        text-align: center;
+        letter-spacing: -0.06em;
+        color: rgba($dark, 0.6);
+        margin-bottom: 30px;
+    }
+}

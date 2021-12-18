@@ -1,0 +1,56 @@
+/*** header style ****/
+
+.navbar-brand {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 24px;
+    color: $dark
+}
+
+.bg-light {
+    background-color: #fff !important;
+    padding: 11px 0;
+    .navbar-nav {
+        .nav-link {
+            padding: 0 30px;
+            color: $dark;
+            font-size: 14px;
+            line-height: 16px;
+            position: relative;
+            transition: all 0.3s ease;
+            &::before {
+                content: "";
+                display: block;
+                width: 35px;
+                height: 3px;
+                bottom: -6px;
+                position: absolute;
+                background: transparent;
+                transition: all 0.3s ease;
+            }
+            &:hover {
+                color: $blue;
+                &::before {
+                    background: $blue;
+                }
+            }
+            &.join-btn {
+                background: $blue;
+                color: #fff;
+                padding: 11px 20px;
+                border-radius: 30px;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21px;
+                border: 3px solid transparent;
+                &::before {
+                    display: none;
+                }
+                &:hover {
+                    background: transparent;
+                    border-color: $blue;
+                    color: $blue;
+                }
+            }
+        }
+    }
+}
