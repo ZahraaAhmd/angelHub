@@ -115,6 +115,7 @@ h3 {
   line-height: 14px;
   color: #000;
   margin-right: 5px;
+  margin-bottom: 5px;
   display: inline-block;
   font-family: 'Work Sans', sans-serif;
   transition: all 0.3s ease;
@@ -907,6 +908,8 @@ h3 {
 /**** investors page styles ****/
 .investors-hero {
   margin-bottom: 40px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .investors-hero .container-fluid {
@@ -959,6 +962,11 @@ h3 {
 }
 
 /**** join-features styles ****/
+.join-features {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 .join-features .container-fluid {
   border-radius: 19px;
   padding-top: 60px;
@@ -1296,6 +1304,11 @@ h3 {
   color: rgba(0, 0, 0, 0.35);
 }
 
+.profile .investments .block .company-detail strong {
+  font-weight: 500;
+  color: #000;
+}
+
 /**** footer style ****/
 footer {
   font-family: 'Work Sans', sans-serif;
@@ -1362,9 +1375,47 @@ footer .copyright {
   .bg-light .navbar-nav .nav-link {
     padding: 0 20px;
   }
+  .investors-hero .hero-inner .btn {
+    width: 100%;
+    max-width: 320px;
+  }
+  .join-features .btn {
+    font-size: 14px;
+  }
+  .profile .investments .block {
+    justify-content: space-between;
+  }
+  .profile .investments .block .company-img {
+    width: auto;
+    padding: 15px 15px;
+    text-align: center;
+  }
+  .profile .investments .block::before {
+    display: none;
+  }
+  .profile .investments .block .company-link {
+    order: initial;
+  }
+  .profile .investments .block .company-link {
+    padding: 0 15px;
+  }
+  .profile .investments .block .col {
+    padding-left: 35px;
+    width: 100%;
+    flex: 0 0 100%;
+    border-top: 2px solid #F4F4F4;
+    padding: 15px;
+  }
+  .profile .investments .block .company-detail span:first-child {
+    margin-right: 20px;
+  }
 }
 
 @media (max-width: 767.98px) {
+  h2 {
+    font-size: 46px;
+    line-height: 53px;
+  }
   .bg-light {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
@@ -1492,12 +1543,59 @@ footer .copyright {
   .investors-list .investor .list-head {
     margin-bottom: 32px;
   }
+  .investors-hero {
+    padding-top: 24px;
+    margin-bottom: 54px;
+  }
+  .investors-hero .hero-inner {
+    padding: 17px 0;
+  }
+  .join-features .container-fluid {
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .join-features .container-fluid.bg-blue2 {
+    padding-top: 24px;
+  }
+  .join-features .container-fluid.bg-blue2 .inner-container p {
+    color: rgba(255, 255, 255, 0.86) !important;
+  }
+  .join-features .col-md-auto {
+    max-width: 100%;
+  }
+  .join-features .inner-container .row {
+    margin: 0;
+  }
+  .join-features .inner-container .row .col-md {
+    display: none;
+  }
+  .join-features .inner-container .feature-box {
+    margin-top: 32px;
+  }
+  .join-features .inner-container .feature-box h4 {
+    font-weight: 600;
+  }
+  .join-features .inner-container .feature-box p {
+    color: rgba(0, 0, 0, 0.86);
+  }
+  .profile .profile-content .col-md {
+    padding: 24px;
+  }
+  .profile .profile-content .row .col-md-auto {
+    width: 220px;
+  }
 }
 
 @media (max-width: 575.98px) {
   h1 {
     font-size: 48px;
     line-height: 57px;
+  }
+  h3,
+  h2 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 600;
   }
   .font-20 {
     font-size: 16px;
@@ -1609,6 +1707,105 @@ footer .copyright {
   }
   .investor-form .comany-step .form-label {
     margin: 75px auto;
+  }
+  .investors-hero .hero-inner p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .partner-companies .title {
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+  }
+  .partner-companies .row .col-4 a img {
+    margin-bottom: 20px;
+  }
+  .faq {
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+  .investors-hero .hero-inner h2 {
+    font-size: 34px;
+    line-height: 40px;
+  }
+  .join-features .inner-container p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .profile .profile-content {
+    background: transparent;
+    box-shadow: none;
+  }
+  .profile .profile-content .row .col-12 {
+    background: #FFFFFF;
+    box-shadow: 0px 6px 12px -6px rgba(24, 39, 75, 0.12), 0px 8px 24px -4px rgba(24, 39, 75, 0.08);
+    border-radius: 20px;
+    margin-bottom: 16px;
+    width: 100% !important;
+    border: 0;
+  }
+  .profile .profile-content .row .col-md-auto {
+    text-align: center;
+  }
+  .profile .profile-content .investor-img {
+    width: 87px;
+    height: 87px;
+    margin-bottom: 16px;
+  }
+  .profile .profile-content .investor-name {
+    font-size: 24px;
+  }
+  .profile .profile-content .investor-links li {
+    margin-bottom: 22px;
+    display: inline-block;
+    margin: 0 12px 0px 12px;
+  }
+  .profile .profile-content .investor-links li:first-child {
+    margin-left: 0;
+  }
+  .profile .profile-content .investor-links li:last-child {
+    margin-right: 0;
+  }
+  .profile .profile-content .investor-links li a {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .profile .profile-content .investor-links li a i {
+    width: auto;
+    margin-right: 6px;
+  }
+  .profile .investments .block .company-img img {
+    width: 80px;
+  }
+  .profile .investments .block .company-link {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: calc(100% - 110px);
+    text-align: right;
+  }
+  .profile .investments .block .company-detail span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .profile .investments .block .company-detail span:first-child {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+  .profile .investments .block h4 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .profile .details-title {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 16px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

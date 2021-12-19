@@ -440,6 +440,8 @@
 
 .investors-hero {
     margin-bottom: 40px;
+    padding-right: 15px;
+    padding-left: 15px;
     .container-fluid {
         border-radius: 20px;
     }
@@ -490,6 +492,8 @@
 /**** join-features styles ****/
 
 .join-features {
+    padding-right: 15px;
+    padding-left: 15px;
     .container-fluid {
         border-radius: 19px;
         padding-top: 60px;
@@ -788,6 +792,10 @@
                 font-size: 13px;
                 line-height: 15px;
                 color: rgba(0, 0, 0, 0.35);
+                strong {
+                    font-weight: 500;
+                    color: #000
+                }
             }
         }
     }
