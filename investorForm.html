@@ -203,30 +203,61 @@
                             <div class="step comany-step">
                                 <h2>Show people your previous investments</h2>
                                 <div class="form-field">
-                                    <div class="company-block">
-                                        <h4 class="mb-3">List of investments</h4>
-                                        <div class="company">
-                                            <div class="row">
-                                                <div class="col-sm-auto col-12">
-                                                    <img src="images/co.svg" class="company-logo">
+                                    <div class="company-block d-flex justify-content-center align-items-center">
+                                        <div class="company-list d-none">
+                                            <h4 class="mb-3">List of investments</h4>
+                                            <div class="company">
+                                                <div class="row">
+                                                    <div class="col-sm-auto col-12">
+                                                        <img src="images/co.svg" class="company-logo">
+                                                    </div>
+                                                    <div class="col-sm col-12">
+                                                        <div class="company-info">Startup Name - <span>CoLegend</span></div>
+                                                        <div class="company-info">Investment Location - <span>Cairo, Egypt</span></div>
+                                                        <div class="company-info">Investment Date - <span>20 July 2021</span></div>
+                                                        <div class="company-info"><img src="images/link.svg">http://co-legend.today/</div>
+                                                    </div>
                                                 </div>
-                                                <div class="col-sm col-12">
-                                                    <div class="company-info">Startup Name - <span>CoLegend</span></div>
-                                                    <div class="company-info">Investment Location - <span>Cairo, Egypt</span></div>
-                                                    <div class="company-info">Investment Date - <span>20 July 2021</span></div>
-                                                    <div class="company-info"><img src="images/link.svg">http://co-legend.today/</div>
+                                            </div>
+                                            <div class="company">
+                                                <div class="row">
+                                                    <div class="col-sm-auto col-12">
+                                                        <img src="images/co.svg" class="company-logo">
+                                                    </div>
+                                                    <div class="col-sm col-12">
+                                                        <div class="company-info">Startup Name - <span>CoLegend</span></div>
+                                                        <div class="company-info">Investment Location - <span>Cairo, Egypt</span></div>
+                                                        <div class="company-info">Investment Date - <span>20 July 2021</span></div>
+                                                        <div class="company-info"><img src="images/link.svg">http://co-legend.today/</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="company">
+                                                <div class="row">
+                                                    <div class="col-sm-auto col-12">
+                                                        <img src="images/co.svg" class="company-logo">
+                                                    </div>
+                                                    <div class="col-sm col-12">
+                                                        <div class="company-info">Startup Name - <span>CoLegend</span></div>
+                                                        <div class="company-info">Investment Location - <span>Cairo, Egypt</span></div>
+                                                        <div class="company-info">Investment Date - <span>20 July 2021</span></div>
+                                                        <div class="company-info"><img src="images/link.svg">http://co-legend.today/</div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <button class="btn btn-white add-company">+ Add company</button>
+                                        <button class="btn btn-white add-company mb-3" data-bs-toggle="modal" data-bs-target="#add-company">+ Add company</button>
                                     </div>
 
-                                    <label class="form-label">Please add at least 1 previous investement to be contunie </label>
+                                    <label class="form-label mb-4">Please add at least 1 previous investement to be contunie </label>
                                 </div>
                             </div>
 
                             <div id="success">
                                 <div class="mt-5">
+                                    <div class="mail-block text-center">
+                                        <img src="images/mail.gif">
+                                    </div>
                                     <h4>Your application is on its way!</h4>
                                     <p>We will review and notify you once you’re listed!</p>
                                     <a class="btn btn-primary" href="InvestorList.html">BACK TO HOMEPAGE</a>
@@ -236,7 +267,7 @@
                         <div id="q-box__buttons">
 
                             <button id="next-btn" type="button" class="btn btn-primary">Next</button>
-                            <button id="submit-btn" type="submit" class="btn btn-primary">Submit</button>
+                            <button id="submit-btn" type="submit" class="btn btn-primary disabled" aria-disabled="true">Complete</button>
                             <button id="prev-btn" type="button" class="btn-prev">Go Back</button>
                         </div>
                     </form>
@@ -250,10 +281,43 @@
         </div>
     </section>
 
-    <div class="modal fade modal1" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="add-company" tabindex="-1" aria-labelledby="addCompanyLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="add-company form-field">
+                        <h4>Add company</h4>
+                        <div class="mb-3">
+                            <label class="form-label">Name of the company</label>
+                            <input type="text" class="form-control" placeholder="EX. Hydrastudioz">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Date of investment</label>
+                            <input type="date" class="form-control" placeholder="dd/mm/yyyy">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Where is the company based?</label>
+                            <select class="form-select form-control">
+                                <option selected>Choose country</option>
+                                <option value="1">country name</option>
+                                <option value="2">country name</option>
+                                <option value="3">country name</option>
+                                <option value="4">country name</option>
+                                <option value="5">country name</option>
+                                <option value="6">country name</option>
+                                <option value="7">country name</option>
+                                <option value="8">country name</option>
+                            </select>
+                        </div>
+                        <div class="mb-3 file-attach">
+                            <img src="images/attach.svg">
+                            <span>Attach company logo</span>
+                        </div>
+                        <div class="img-size pb-3 mb-3">Minumim size W 200 px ~ H 200 px</div>
+
+                        <button class="btn btn-primary company-form" data-bs-dismiss="modal" aria-label="Close">Add</button>
+                    </div>
 
                 </div>
 

@@ -203,6 +203,11 @@
             line-height: 21px;
             justify-content: center;
             align-items: center;
+            &.disabled {
+                background: rgba(0, 0, 0, 0.26);
+                border-color: rgba(0, 0, 0, 0.26);
+                opacity: 1;
+            }
         }
         .btn-prev {
             border: 0 !important;
@@ -218,6 +223,7 @@
     }
     .company-block {
         min-height: 330px;
+        flex-flow: wrap;
     }
     .company {
         background: #FFFFFF;
@@ -313,6 +319,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+        .mail-block {
+            margin-bottom: 45px;
         }
     }
 }
@@ -433,6 +442,76 @@
     visibility: hidden;
     transform: translateY(-100%);
     transition: all 0.3s 1s ease-out;
+}
+
+#add-company {
+    .modal-dialog {
+        max-width: 660px;
+        .modal-content {
+            background: #FFFFFF;
+            box-shadow: 0px 6px 12px -6px rgba(24, 39, 75, 0.12), 0px 8px 24px -4px rgba(24, 39, 75, 0.08);
+            border-radius: 20px;
+            padding-top: 34px;
+            padding-bottom: 74px;
+            .btn-close {
+                position: absolute;
+                width: 45px;
+                height: 45px;
+                right: 24px;
+                top: -10px;
+                background-color: #F4F4F4;
+                border-radius: 50%;
+                opacity: 1;
+            }
+            .add-company {
+                max-width: 374px;
+                margin: 0 auto;
+                h4 {
+                    font-weight: 600;
+                    font-size: 28px;
+                    line-height: 33px;
+                    text-align: center;
+                    margin-bottom: 47px;
+                }
+                .file-attach {
+                    padding: 22px 20px 22px 55px;
+                    background: #F4F4F4;
+                    border: 1px dashed #000000;
+                    box-sizing: border-box;
+                    border-radius: 12px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #000;
+                    span {
+                        width: calc(100% - 25px);
+                        text-align: center;
+                        display: inline-block;
+                    }
+                }
+                .img-size {
+                    font-size: 13px;
+                    line-height: 15px;
+                    text-align: center;
+                    color: rgba(0, 0, 0, 0.42);
+                }
+                .btn {
+                    height: 50px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    background: $blue;
+                    border-radius: 30px;
+                    font-weight: bold;
+                    font-size: 18px;
+                    text-align: center;
+                    color: #FFFFFF;
+                    width: 100%
+                }
+            }
+        }
+    }
 }
 
 

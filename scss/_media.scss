@@ -106,6 +106,7 @@
             left: 0px;
             top: 0px;
             background: rgba(0, 0, 0, 0.5);
+            z-index: 9;
         }
         .navbar-collapse {
             background: #fff;
@@ -115,6 +116,7 @@
             top: 0;
             width: 300px;
             padding: 40px 24px 70px 24px;
+            z-index: 10;
             .head {
                 display: flex;
                 align-items: center;

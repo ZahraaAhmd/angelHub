@@ -1,3 +1,10 @@
+$(".js-select2").select2({
+    closeOnSelect: false,
+    placeholder: "Placeholder",
+    allowHtml: true,
+    allowClear: false,
+    tags: true // создает новые опции на лету
+});
 const progress = (value) => {
     document.getElementsByClassName('progress-bar')[0].style.width = `${value}%`;
 }
@@ -104,5 +111,12 @@ submitBtn.addEventListener('click', () => {
 
 
 $(document).ready(function() {
+
     $('.js-example-basic-multiple').select2();
+    $(".company-form").click(function() {
+        $(".company-list").removeClass("d-none");
+        $(".investor-form #q-box__buttons .btn-primary").removeClass("disabled");
+        $(".investor-form #q-box__buttons .btn-primary").attr("aria-disabled", "false")
+    });
+
 });
