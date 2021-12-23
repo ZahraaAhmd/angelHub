@@ -336,10 +336,14 @@
     <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/custom.js"></script>
     <script>
-        /*  $(".investor-form .form-field").niceScroll({
-                    cursorcolor: "aquamarine",
-                    cursorwidth: "16px"
-                });*/
+        $(".form-field").mouseover(function() {
+            $(".form-field").getNiceScroll().resize();
+        });
+        $(".investor-form .form-field").niceScroll({
+            cursorcolor: "#000",
+            cursorwidth: "8px",
+            autohidemode: 'leave'
+        });
     </script>
 
 </body>

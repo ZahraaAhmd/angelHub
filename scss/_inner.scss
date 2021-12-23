@@ -115,7 +115,7 @@
 }
 
 .investor-form {
-    padding-bottom: 65px;
+    padding-bottom: 30px;
     .container {
         max-width: 557px;
         position: relative;
@@ -157,6 +157,8 @@
         margin-top: 85px;
         background: #F8F8F8;
         border-radius: 20px;
+        height: 100vh;
+        max-height: calc(100vh - 330px);
         padding: 36px 75px 150px 75px;
         .form-control.no-border {
             border-color: transparent;
