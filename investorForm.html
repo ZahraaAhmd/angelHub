@@ -120,7 +120,7 @@
                                             <option value="8">city name</option>
                                         </select>
                                     </div>
-                                    <div class="mb-5 pb-3">
+                                    <div class="mb-3">
                                         <label class="form-label">Tell us a little bit about yourself</label>
                                         <textarea class="form-control no-border" placeholder="Type anything"></textarea>
                                     </div>
@@ -194,6 +194,11 @@
                                     </div>
                                     <div class="mb-3">
                                         <label class="form-label">Add your twitter account</label>
+                                        <input class="form-control" type="text" placeholder="@">
+                                        <i class="fab fa-twitter form-icon"></i>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Add your company url</label>
                                         <input class="form-control" type="text" placeholder="@">
                                         <i class="fab fa-twitter form-icon"></i>
                                     </div>
@@ -328,8 +333,14 @@
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/custom.js"></script>
-
+    <script>
+        $(".investor-form .form-field").niceScroll({
+            cursorcolor: "aquamarine",
+            cursorwidth: "16px"
+        });
+    </script>
 
 </body>
 

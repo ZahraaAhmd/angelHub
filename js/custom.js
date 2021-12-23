@@ -1,9 +1,8 @@
 $(".js-select2").select2({
     closeOnSelect: false,
-    placeholder: "Placeholder",
     allowHtml: true,
     allowClear: false,
-    tags: true // создает новые опции на лету
+    tags: true
 });
 const progress = (value) => {
     document.getElementsByClassName('progress-bar')[0].style.width = `${value}%`;

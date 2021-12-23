@@ -3,7 +3,7 @@ body {
     overflow-x: hidden;
     transition: all 0.3s ease;
     &.bg-gray {
-        background: #E5E5E5;
+        background: #F4F4F4;
     }
 }
 
@@ -141,7 +141,7 @@ h3 {
     background: #FFFFFF;
     border: 2px solid #E5E5E5;
     box-sizing: border-box;
-    box-shadow: 0px 6px 12px -6px rgba(24, 39, 75, 12%), 0px 8px 24px -4px rgba(24, 39, 75, 8%);
+    box-shadow: 0px 6px 12px -6px rgba(24, 39, 75, 0.12), 0px 8px 24px -4px rgba(24, 39, 75, 0.08);
     border-radius: 12px;
     margin-top: 5px;
     padding: 24px 16px
