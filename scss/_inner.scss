@@ -709,8 +709,17 @@
         border-radius: 20px;
         padding: 24px 15px 21px 24px;
         margin-bottom: 20px;
+        transition: all 0.3s ease;
+        h4 {
+            transition: all 0.3s ease;
+        }
         p {
             margin-bottom: 0;
+        }
+        &:hover {
+            h4 {
+                color: $blue
+            }
         }
     }
 }
@@ -872,9 +881,27 @@
                 font-size: 13px;
                 line-height: 15px;
                 color: rgba(0, 0, 0, 0.35);
+                span {
+                    vertical-align: middle;
+                    display: inline-block;
+                    &:not(.hidden-xs) {
+                        &:last-child {
+                            @media(min-width: 576px) {
+                                margin-left: 20px;
+                            }
+                        }
+                    }
+                }
+                img {
+                    vertical-align: middle;
+                    @media(min-width: 576px) {
+                        margin-top: -3px;
+                    }
+                }
                 strong {
                     font-weight: 500;
-                    color: #000
+                    color: #000;
+                    font-size: 14px;
                 }
             }
         }

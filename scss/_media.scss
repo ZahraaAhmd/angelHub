@@ -35,9 +35,6 @@
         border-top: 2px solid #F4F4F4;
         padding: 15px
     }
-    .profile .investments .block .company-detail span:first-child {
-        margin-right: 20px;
-    }
 }
 
 @media(max-width:767.98px) {
@@ -225,6 +222,15 @@
     .profile .profile-content .row .col-md-auto {
         width: 220px;
     }
+    .profile .investments .details-title {
+        margin-bottom: 22px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        span {
+            font-size: 14px;
+        }
+    }
 }
 
 @media(max-width:575.98px) {
@@ -255,6 +261,10 @@
         margin-bottom: 13px;
     }
     .investors-search .form-control {
+        margin-bottom: 0;
+    }
+    .investors-search .col-6,
+    .investors-search .col-12 {
         margin-bottom: 0;
     }
     .investors-search .form-control.search-input {
@@ -307,7 +317,10 @@
             background: transparent;
             padding: 0 0 0 0;
             margin-bottom: 130px;
-            min-height: 0;
+            min-height: auto;
+            height: auto;
+            max-height: 100%;
+            touch-action: auto !important;
             .form-control {
                 height: 48px;
                 &.no-border {
@@ -414,7 +427,6 @@
                 }
                 a {
                     font-size: 13px;
-                    font-weight: 600;
                     i {
                         width: auto;
                         margin-right: 6px;
@@ -448,6 +460,43 @@
         line-height: 21px;
         margin-bottom: 16px;
     }
+    .home-body .select2-container--default .select2-results__option .select2-results__option,
+    .home-body .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable,
+    .home-body .select2-container--default .select2-results__option--selected,
+    .home-body .select2-results__option--selectable {
+        font-size: 14px;
+    }
+    .home-body .select2-results__option:before {
+        height: 16px;
+        width: 16px;
+    }
+    .select2-container--default .select2-results__option .select2-results__option {
+        padding: 6px 6px;
+    }
+    .hidden-xs {
+        display: none !important;
+    }
+    #add-company .modal-dialog {
+        padding: 0;
+        margin: 0;
+        margin-top: 130px;
+        .modal-content {
+            .btn-close {
+                width: 73px;
+                height: 4px;
+                left: calc(50% - 36px);
+                background: #C6C6C6;
+                border-radius: 0;
+                padding: 0;
+            }
+            .add-company h4 {
+                text-align: left;
+            }
+        }
+    }
+    .form-field .form-control {
+        height: 48px;
+    }
 }
 
 @media(max-width:400px) {
@@ -455,5 +504,39 @@
         font-size: 18px;
         line-height: 21px;
         margin-bottom: 16px !important;
+    }
+    /* .select2-container.select2-container--open {
+        left: 15px !important;
+    }
+    .select2-container--open .select2-dropdown--below {
+        width: calc(100% - 30px) !important
+    }*/
+    .select2-container--open .select2-dropdown--below {
+        padding: 14px 6px;
+    }
+    .home-body .select2-container--default .select2-results__option .select2-results__option,
+    .home-body .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable,
+    .home-body .select2-container--default .select2-results__option--selected,
+    .home-body .select2-results__option--selectable {
+        font-size: 12px;
+    }
+    .profile .profile-content .investor-links li {
+        margin: 0 6px;
+        a i {
+            font-size: 18px;
+            width: auto;
+        }
+    }
+}
+
+@media (max-width:350px) {
+    .profile .investments .details-title {
+        font-size: 15px;
+        span {
+            font-size: 12px;
+        }
+    }
+    .investor-form .company {
+        padding: 16px
     }
 }

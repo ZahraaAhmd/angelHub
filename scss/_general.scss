@@ -203,3 +203,28 @@ h3 {
     padding-left: 0;
     padding-right: 0;
 }
+
+.select2-container--default .select2-results__option .select2-results__option {
+    padding: 7.5px 10px;
+    margin-bottom: 5px;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable,
+.select2-container--default .select2-results__option--selected {
+    background-color: rgba(17, 79, 245, 0.06);
+    border-radius: 8px;
+    color: $blue;
+}
+
+.select2-results__option.select2-results__option--group {
+    &::before {
+        display: none !important;
+    }
+    .select2-results__group {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: rgba(0, 0, 0, 0.43);
+        margin-bottom: 20px;
+    }
+}

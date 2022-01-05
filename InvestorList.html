@@ -79,15 +79,18 @@
                     <div class="row">
                         <div class="col-6">
                             <select class="form-select form-control js-select2" multiple="multiple" data-placeholder="Industry Focused">
-                                <option>Fin-tech</option>
-                                <option value="1">Health</option>
-                                <option value="2">Education</option>
-                                <option value="3">Industry Example</option>
-                                <option value="4">Industry Example</option>
-                                <option value="5">Industry Example</option>
-                                <option value="6">Industry Example</option>
-                                <option value="7">Industry Example</option>
-                                <option value="8">Industry Example</option>
+                                <optgroup label="CHOOSE INDUSTRY">
+                                    <option>Fin-tech</option>
+                                    <option value="1">Health</option>
+                                    <option value="2">Education</option>
+                                    <option value="3">Industry Example</option>
+                                    <option value="4">Industry Example</option>
+                                    <option value="5">Industry Example</option>
+                                    <option value="6">Industry Example</option>
+                                    <option value="7">Industry Example</option>
+                                    <option value="8">Industry Example</option>
+                                </optgroup>
+                                
                               </select>
                         </div>
                         <div class="col-6">
@@ -407,7 +410,18 @@
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+        $(".select2-search__field").mouseover(function() {
+            $(".select2-results__options").getNiceScroll().resize();
+        });
+        $(".select2-container--default .select2-results>.select2-results__options").niceScroll({
+            cursorcolor: "#000",
+            cursorwidth: "8px",
+            autohidemode: 'leave'
+        });
+    </script>
 </body>
 
 </html>

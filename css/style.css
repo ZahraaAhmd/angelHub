@@ -216,6 +216,30 @@ h3 {
   padding-right: 0;
 }
 
+.select2-container--default .select2-results__option .select2-results__option {
+  padding: 7.5px 10px;
+  margin-bottom: 5px;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable,
+.select2-container--default .select2-results__option--selected {
+  background-color: rgba(17, 79, 245, 0.06);
+  border-radius: 8px;
+  color: #114FF5;
+}
+
+.select2-results__option.select2-results__option--group::before {
+  display: none !important;
+}
+
+.select2-results__option.select2-results__option--group .select2-results__group {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.43);
+  margin-bottom: 20px;
+}
+
 /*** header style ****/
 .navbar-brand {
   font-family: 'Work Sans', sans-serif;
@@ -283,10 +307,15 @@ h3 {
 }
 
 /***** investors page styles****/
+.home-body {
+  /* .select2-hidden-accessible {
+        position: fixed !important;
+    } */
+}
+
 .home-body .select2-container--default .select2-selection--multiple {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 42px;
-  margin-bottom: 46px;
   box-shadow: none !important;
   outline: none !important;
   transition: all 0.3s ease;
@@ -325,8 +354,9 @@ h3 {
   border: 2px solid #e9e9e9;
   border-radius: 4px;
   background-color: #fff;
-  margin-right: 20px;
+  margin-right: 7px;
   vertical-align: middle;
+  margin-top: -2px;
 }
 
 .home-body .select2-results__option[aria-selected=true]:before {
@@ -349,13 +379,18 @@ h3 {
   margin: 24px auto;
 }
 
+.investors-search .col-6,
+.investors-search .col-12 {
+  margin-bottom: 46px;
+}
+
 .investors-search .form-control {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 42px;
-  margin-bottom: 46px;
   box-shadow: none !important;
   outline: none !important;
   transition: all 0.3s ease;
+  margin-bottom: 0px;
 }
 
 .investors-search .form-control.search-input {
@@ -1258,10 +1293,19 @@ h3 {
   border-radius: 20px;
   padding: 24px 15px 21px 24px;
   margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.faq .faq-box h4 {
+  transition: all 0.3s ease;
 }
 
 .faq .faq-box p {
   margin-bottom: 0;
+}
+
+.faq .faq-box:hover h4 {
+  color: #114FF5;
 }
 
 /*** profile page style *****/
@@ -1448,9 +1492,31 @@ h3 {
   color: rgba(0, 0, 0, 0.35);
 }
 
+.profile .investments .block .company-detail span {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+@media (min-width: 576px) {
+  .profile .investments .block .company-detail span:not(.hidden-xs):last-child {
+    margin-left: 20px;
+  }
+}
+
+.profile .investments .block .company-detail img {
+  vertical-align: middle;
+}
+
+@media (min-width: 576px) {
+  .profile .investments .block .company-detail img {
+    margin-top: -3px;
+  }
+}
+
 .profile .investments .block .company-detail strong {
   font-weight: 500;
   color: #000;
+  font-size: 14px;
 }
 
 /**** footer style ****/
@@ -1549,9 +1615,6 @@ footer .copyright {
     flex: 0 0 100%;
     border-top: 2px solid #F4F4F4;
     padding: 15px;
-  }
-  .profile .investments .block .company-detail span:first-child {
-    margin-right: 20px;
   }
 }
 
@@ -1730,6 +1793,15 @@ footer .copyright {
   .profile .profile-content .row .col-md-auto {
     width: 220px;
   }
+  .profile .investments .details-title {
+    margin-bottom: 22px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+  }
+  .profile .investments .details-title span {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -1760,6 +1832,10 @@ footer .copyright {
     margin-bottom: 13px;
   }
   .investors-search .form-control {
+    margin-bottom: 0;
+  }
+  .investors-search .col-6,
+  .investors-search .col-12 {
     margin-bottom: 0;
   }
   .investors-search .form-control.search-input {
@@ -1813,7 +1889,10 @@ footer .copyright {
     background: transparent;
     padding: 0 0 0 0;
     margin-bottom: 130px;
-    min-height: 0;
+    min-height: auto;
+    height: auto;
+    max-height: 100%;
+    touch-action: auto !important;
   }
   .investor-form .form-field .form-control {
     height: 48px;
@@ -1914,7 +1993,6 @@ footer .copyright {
   }
   .profile .profile-content .investor-links li a {
     font-size: 13px;
-    font-weight: 600;
   }
   .profile .profile-content .investor-links li a i {
     width: auto;
@@ -1945,6 +2023,41 @@ footer .copyright {
     line-height: 21px;
     margin-bottom: 16px;
   }
+  .home-body .select2-container--default .select2-results__option .select2-results__option,
+  .home-body .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable,
+  .home-body .select2-container--default .select2-results__option--selected,
+  .home-body .select2-results__option--selectable {
+    font-size: 14px;
+  }
+  .home-body .select2-results__option:before {
+    height: 16px;
+    width: 16px;
+  }
+  .select2-container--default .select2-results__option .select2-results__option {
+    padding: 6px 6px;
+  }
+  .hidden-xs {
+    display: none !important;
+  }
+  #add-company .modal-dialog {
+    padding: 0;
+    margin: 0;
+    margin-top: 130px;
+  }
+  #add-company .modal-dialog .modal-content .btn-close {
+    width: 73px;
+    height: 4px;
+    left: calc(50% - 36px);
+    background: #C6C6C6;
+    border-radius: 0;
+    padding: 0;
+  }
+  #add-company .modal-dialog .modal-content .add-company h4 {
+    text-align: left;
+  }
+  .form-field .form-control {
+    height: 48px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -1952,6 +2065,40 @@ footer .copyright {
     font-size: 18px;
     line-height: 21px;
     margin-bottom: 16px !important;
+  }
+  /* .select2-container.select2-container--open {
+        left: 15px !important;
+    }
+    .select2-container--open .select2-dropdown--below {
+        width: calc(100% - 30px) !important
+    }*/
+  .select2-container--open .select2-dropdown--below {
+    padding: 14px 6px;
+  }
+  .home-body .select2-container--default .select2-results__option .select2-results__option,
+  .home-body .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable,
+  .home-body .select2-container--default .select2-results__option--selected,
+  .home-body .select2-results__option--selectable {
+    font-size: 12px;
+  }
+  .profile .profile-content .investor-links li {
+    margin: 0 6px;
+  }
+  .profile .profile-content .investor-links li a i {
+    font-size: 18px;
+    width: auto;
+  }
+}
+
+@media (max-width: 350px) {
+  .profile .investments .details-title {
+    font-size: 15px;
+  }
+  .profile .investments .details-title span {
+    font-size: 12px;
+  }
+  .investor-form .company {
+    padding: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */
