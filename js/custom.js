@@ -4,9 +4,9 @@ $(".js-select2").select2({
     allowClear: false,
     tags: true
 });
-const progress = (value) => {
+/*const progress = (value) => {
     document.getElementsByClassName('progress-bar')[0].style.width = `${value}%`;
-}
+}*/
 
 let step = document.getElementsByClassName('step');
 let prevBtn = document.getElementById('prev-btn');
@@ -16,6 +16,7 @@ let form = document.getElementsByTagName('form')[0];
 let preloader = document.getElementById('preloader-wrapper');
 let bodyElement = document.querySelector('body');
 let succcessDiv = document.getElementById('success');
+let Nice = document.getElementById('ascrail2000');
 
 form.onsubmit = () => {
     return false
@@ -54,7 +55,7 @@ nextBtn.addEventListener('click', () => {
             }
         }
     }
-    progress((100 / stepCount) * current_step);
+    // progress((100 / stepCount) * current_step);
 });
 
 
@@ -114,7 +115,8 @@ $(document).ready(function() {
     $(".company-form").click(function() {
         $(".company-list").removeClass("d-none");
         $(".investor-form #q-box__buttons .btn-primary").removeClass("disabled");
-        $(".investor-form #q-box__buttons .btn-primary").attr("aria-disabled", "false")
+        $(".investor-form #q-box__buttons .btn-primary").attr("aria-disabled", "false");
+        $(".form-field .no-company").hide();
+        $(".comany-step .progress-bar").css("width", "95%");
     });
-
 });

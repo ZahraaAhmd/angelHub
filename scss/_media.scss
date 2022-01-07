@@ -306,8 +306,9 @@
             margin: 0;
         }
         .progress {
-            top: 72px;
-            left: 15px;
+            width: 100%;
+            max-width: 343px;
+            margin: 16px 0 48px 0;
         }
         #q-box__buttons {
             bottom: -120px
