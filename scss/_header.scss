@@ -9,6 +9,10 @@
 .bg-light {
     background-color: #fff !important;
     padding: 11px 0;
+    .container {
+        width: 100%;
+        max-width: 1390px;
+    }
     .navbar-nav {
         .nav-link {
             padding: 0 30px;

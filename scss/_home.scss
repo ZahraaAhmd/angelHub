@@ -61,7 +61,7 @@
     padding-bottom: 209px;
     &-search {
         margin-top: 24px;
-        max-width: 570px;
+        max-width: 762px;
         margin: 24px auto;
         .col-6,
         .col-12 {
@@ -82,7 +82,7 @@
                 background-position: left 23px center;
                 background-size: 16px;
                 height: 50px;
-                max-width: 486px;
+                max-width: 762px;
                 margin-right: auto;
                 margin-left: auto;
                 &::placeholder {
@@ -197,6 +197,7 @@
             &:hover {
                 background: $light;
                 border-color: $light;
+                border: 1px solid #000000;
                 .list-body {
                     .small-tag {
                         background: #fff;

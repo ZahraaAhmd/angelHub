@@ -588,6 +588,8 @@
 .join-features {
     padding-right: 15px;
     padding-left: 15px;
+    position: relative;
+    z-index: 3;
     .container-fluid {
         border-radius: 19px;
         padding-top: 60px;
@@ -620,12 +622,12 @@
             border-radius: 20px;
             padding: 16px 10px 16px 20px;
             .feature-icon {
-                width: 50px;
+                /* width: 50px;
                 height: 50px;
                 border-radius: 50%;
                 background: $blue2;
                 display: flex;
-                padding: 14px 13px;
+                padding: 14px 13px; */
             }
             h4 {
                 margin: 12px 0px;
@@ -656,7 +658,7 @@
                 background: rgba(255, 255, 255, 0.05);
                 border: 2px solid rgba(255, 255, 255, 0.12);
                 .feature-icon {
-                    background: #fff;
+                    // background: #fff;
                 }
             }
         }
@@ -704,8 +706,15 @@
 /**** faq styles ****/
 
 .faq {
-    padding-top: 100px;
-    padding-bottom: 200px;
+    padding-top: 52px;
+    padding-bottom: 70px;
+    border-radius: 0px 0px 100px 100px;
+    background: #FBFBFB;
+    position: relative;
+    z-index: 2;
+    .container {
+        max-width: 813px
+    }
     .row {
         margin-right: -10px;
         margin-left: -10px;
@@ -734,6 +743,58 @@
         &:hover {
             h4 {
                 color: $blue
+            }
+        }
+    }
+    .accordion {
+        @media(min-width: 576px) {
+            padding-top: 30px;
+        }
+    }
+    &.faq2 {
+        padding-top: 200px;
+        margin-top: -100px;
+        .accordion {
+            @media(min-width: 576px) {
+                padding-top: 70px;
+            }
+        }
+    }
+}
+
+.accordion {
+    .accordion-item {
+        background: #FFFFFF;
+        border: 2px solid rgba(0, 0, 0, 0.11);
+        border-radius: 20px;
+        margin-bottom: 24px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .accordion-header {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            color: #000000;
+            .accordion-button {
+                border: 0;
+                background: transparent;
+                padding: 24px 30px 24px 24px;
+                box-shadow: none;
+                &:not(.collapsed) {
+                    box-shadow: none;
+                    color: $blue
+                }
+            }
+        }
+        .accordion-body {
+            padding: 6px 24px 20px 24px;
+            p {
+                margin-bottom: 0;
+                font-size: 16px;
+                line-height: 130.3%;
+                /* or 21px */
+                color: rgba(0, 0, 0, 0.6);
             }
         }
     }

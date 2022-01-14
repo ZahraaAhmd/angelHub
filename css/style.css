@@ -258,6 +258,11 @@ h3 {
   padding: 11px 0;
 }
 
+.bg-light .container {
+  width: 100%;
+  max-width: 1390px;
+}
+
 .bg-light .navbar-nav .nav-link {
   padding: 0 30px;
   color: #000;
@@ -381,7 +386,7 @@ h3 {
 
 .investors-search {
   margin-top: 24px;
-  max-width: 570px;
+  max-width: 762px;
   margin: 24px auto;
 }
 
@@ -407,7 +412,7 @@ h3 {
   background-position: left 23px center;
   background-size: 16px;
   height: 50px;
-  max-width: 486px;
+  max-width: 762px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -538,6 +543,7 @@ h3 {
 .investors-list .investor:hover {
   background: #F9F9F9;
   border-color: #F9F9F9;
+  border: 1px solid #000000;
 }
 
 .investors-list .investor:hover .list-body .small-tag {
@@ -1171,6 +1177,8 @@ h3 {
 .join-features {
   padding-right: 15px;
   padding-left: 15px;
+  position: relative;
+  z-index: 3;
 }
 
 .join-features .container-fluid {
@@ -1215,12 +1223,12 @@ h3 {
 }
 
 .join-features .inner-container .feature-box .feature-icon {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: #2864F1;
-  display: flex;
-  padding: 14px 13px;
+  /* width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: $blue2;
+                display: flex;
+                padding: 14px 13px; */
 }
 
 .join-features .inner-container .feature-box h4 {
@@ -1249,10 +1257,6 @@ h3 {
 .join-features .bg-blue2 .inner-container .feature-box {
   background: rgba(255, 255, 255, 0.05);
   border: 2px solid rgba(255, 255, 255, 0.12);
-}
-
-.join-features .bg-blue2 .inner-container .feature-box .feature-icon {
-  background: #fff;
 }
 
 /**** partner-companies styles ****/
@@ -1296,8 +1300,16 @@ h3 {
 
 /**** faq styles ****/
 .faq {
-  padding-top: 100px;
-  padding-bottom: 200px;
+  padding-top: 52px;
+  padding-bottom: 70px;
+  border-radius: 0px 0px 100px 100px;
+  background: #FBFBFB;
+  position: relative;
+  z-index: 2;
+}
+
+.faq .container {
+  max-width: 813px;
 }
 
 .faq .row {
@@ -1334,6 +1346,65 @@ h3 {
 
 .faq .faq-box:hover h4 {
   color: #114FF5;
+}
+
+@media (min-width: 576px) {
+  .faq .accordion {
+    padding-top: 30px;
+  }
+}
+
+.faq.faq2 {
+  padding-top: 200px;
+  margin-top: -100px;
+}
+
+@media (min-width: 576px) {
+  .faq.faq2 .accordion {
+    padding-top: 70px;
+  }
+}
+
+.accordion .accordion-item {
+  background: #FFFFFF;
+  border: 2px solid rgba(0, 0, 0, 0.11);
+  border-radius: 20px;
+  margin-bottom: 24px;
+}
+
+.accordion .accordion-item:last-child {
+  margin-bottom: 0;
+}
+
+.accordion .accordion-item .accordion-header {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.accordion .accordion-item .accordion-header .accordion-button {
+  border: 0;
+  background: transparent;
+  padding: 24px 30px 24px 24px;
+  box-shadow: none;
+}
+
+.accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  box-shadow: none;
+  color: #114FF5;
+}
+
+.accordion .accordion-item .accordion-body {
+  padding: 6px 24px 20px 24px;
+}
+
+.accordion .accordion-item .accordion-body p {
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 130.3%;
+  /* or 21px */
+  color: rgba(0, 0, 0, 0.6);
 }
 
 /*** profile page style *****/
@@ -1550,6 +1621,12 @@ h3 {
 /**** footer style ****/
 footer {
   font-family: 'Work Sans', sans-serif;
+  position: relative;
+  z-index: 1;
+  background: #114FF5;
+  padding-top: 290px;
+  padding-bottom: 100px;
+  margin-top: -200px;
 }
 
 footer .container {
@@ -1566,13 +1643,14 @@ footer .container {
 }
 
 footer .contact-us {
-  background: #F3F6FD;
+  background: transparent;
   border-radius: 20px;
   padding: 20px 20px 30px 20px;
+  border: 1px solid #FFFFFF;
 }
 
 footer .contact-us img {
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 footer .contact-us p {
@@ -1580,7 +1658,7 @@ footer .contact-us p {
   line-height: 130.3%;
   text-align: center;
   letter-spacing: -0.06em;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.6);
   margin-bottom: 10px;
 }
 
@@ -1589,7 +1667,7 @@ footer .contact-us h3 {
   line-height: 22px;
   text-align: center;
   letter-spacing: -0.06em;
-  color: #000;
+  color: #fff;
   font-weight: 400;
   margin-bottom: 0;
 }
@@ -1597,6 +1675,15 @@ footer .contact-us h3 {
 footer .contact-links {
   margin-top: 83px;
   margin-bottom: 63px;
+  color: #fff;
+}
+
+footer .contact-links a {
+  color: #fff;
+}
+
+footer .contact-links a:hover {
+  color: rgba(255, 255, 255, 0.77);
 }
 
 footer .copyright {
@@ -1604,8 +1691,8 @@ footer .copyright {
   line-height: 130.3%;
   text-align: center;
   letter-spacing: -0.06em;
-  color: rgba(0, 0, 0, 0.6);
-  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.77);
+  margin-bottom: 0px;
 }
 
 /*** media query styles ****/

@@ -12,7 +12,7 @@ let step = document.getElementsByClassName('step');
 let prevBtn = document.getElementById('prev-btn');
 let nextBtn = document.getElementById('next-btn');
 let submitBtn = document.getElementById('submit-btn');
-let form = document.getElementsByTagName('form')[0];
+let form = document.getElementById('form-wrapper');
 let preloader = document.getElementById('preloader-wrapper');
 let bodyElement = document.querySelector('body');
 let succcessDiv = document.getElementById('success');
@@ -91,7 +91,9 @@ submitBtn.addEventListener('click', () => {
     preloader.classList.add('d-block');
 
     const timer = ms => new Promise(res => setTimeout(res, ms));
-
+    form.onsubmit = () => {
+        return true
+    }
     timer(3000)
         .then(() => {
             bodyElement.classList.add('loaded');
@@ -104,7 +106,7 @@ submitBtn.addEventListener('click', () => {
             submitBtn.classList.add('d-none');
             succcessDiv.classList.remove('d-none');
             succcessDiv.classList.add('d-block');
-        })
+        });
 
 });
 
