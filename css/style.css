@@ -392,7 +392,11 @@ h3 {
 
 .investors {
   padding-top: 55px;
-  padding-bottom: 209px;
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  border-radius: 0px 0px 100px 100px;
 }
 
 .investors-search {
