@@ -268,7 +268,18 @@
         margin-bottom: 0;
     }
     .investors-search .form-control.search-input {
-        max-width: 295px
+        height: 60px;
+    }
+    .home-body .select2-container--default .select2-selection--multiple {
+        min-height: 60px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .tags-area {
+        margin-top: 17px;
+    }
+    .investors-search {
+        margin-bottom: 24px;
     }
     .investors-search .row:first-child {
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
