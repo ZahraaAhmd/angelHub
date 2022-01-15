@@ -14,7 +14,10 @@ function select2tags() {
 
         $t.select2({
                 id: -1,
-                placeholder: placeholder
+                placeholder: function() {
+                        $(this).data('placeholder');
+                    }
+                    //placeholder: data - placeholder
             })
             .on("select2:select", function(e) {
                 var selected = {
@@ -23,7 +26,7 @@ function select2tags() {
                 };
                 tags.push(selected);
 
-                $(this).next().find('.select2-selection__custom').html(selected.value + ' (' + $(this).val().length + ')');
+                // $(this).next().find('.select2-selection__custom').html(selected.value + ' (' + $(this).val().length + ')');
 
                 displayTags();
             })
@@ -37,9 +40,9 @@ function select2tags() {
                 indexToDelete = tags.indexOf(foundObj);
                 tags.splice(indexToDelete, 1);
 
-                val = $(this).val()[0] == undefined ? placeholder : $(this).val()[0] + ' (' + $(this).val().length + ')'
+                /* val = $(this).val()[0] == undefined ? placeholder : $(this).val()[0] + ' (' + $(this).val().length + ')'
                 $(this).next().find('.select2-selection__custom').html(val);
-
+*/
                 displayTags();
 
                 setTimeout(function() {
@@ -69,9 +72,9 @@ function select2tags() {
 
         $('select[data-select="' + selected.select + '"]').val(values).trigger('change');
 
-        val = values[0] == undefined ? placeholder : values[0] + ' (' + values.length + ')'
+        /* val = values[0] == undefined ? placeholder : values[0] + ' (' + values.length + ')'
         $('select[data-select="' + selected.select + '"]').next().find('.select2-selection__custom').html(val);
-
+*/
         $(this).remove();
         return false;
     });
@@ -88,6 +91,7 @@ function select2tags() {
 
 }
 
+
 function findObjectByKey(array, key, value) {
     for (var i = 0; i < array.length; i++) {
         if (array[i][key] === value) {
@@ -98,6 +102,8 @@ function findObjectByKey(array, key, value) {
 }
 
 select2tags();
+$(".investors-search .col-6:first-child .select2-selection__custom").html("Industry Focused");
+$(".investors-search .col-6:last-child .select2-selection__custom").html("Investment Ticket");
 /*$(".clear-filter").click(function() {
     $(".tag").remove();
     $('.select2').val(null).trigger("change");
