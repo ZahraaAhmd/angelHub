@@ -326,16 +326,16 @@ h3 {
 
 .home-body .select2-container--default .select2-selection--multiple {
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 42px;
+  border-radius: 42px !important;
   box-shadow: none !important;
   outline: none !important;
   transition: all 0.3s ease;
   font-family: 'Work Sans', sans-serif;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 21px;
   color: #000;
-  min-height: 50px;
+  min-height: 70px;
   padding-left: 20px;
   padding-right: 20px;
   background-image: url("../images/dropdown.svg");
@@ -344,6 +344,9 @@ h3 {
   background-size: 12px 6px;
   white-space: nowrap;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding-top: 0;
 }
 
 .home-body .select2-container--default .select2-selection--multiple .select2-selection__choice {
@@ -379,20 +382,30 @@ h3 {
   padding-left: 3px;
 }
 
+.home-body .select2-container .select2-selection--multiple .select2-selection__rendered {
+  display: none !important;
+}
+
+.home-body .select2-container--default .select2-search--inline .select2-search__field {
+  margin-top: 0;
+}
+
 .investors {
   padding-top: 55px;
   padding-bottom: 209px;
 }
 
 .investors-search {
-  margin-top: 24px;
   max-width: 762px;
-  margin: 24px auto;
+  margin: 24px auto 90px auto;
 }
 
-.investors-search .col-6,
 .investors-search .col-12 {
-  margin-bottom: 46px;
+  margin-bottom: 25px;
+}
+
+.investors-search .col-6 {
+  margin-bottom: 17px;
 }
 
 .investors-search .form-control {
@@ -411,7 +424,7 @@ h3 {
   padding-left: 54px;
   background-position: left 23px center;
   background-size: 16px;
-  height: 50px;
+  height: 70px;
   max-width: 762px;
   margin-right: auto;
   margin-left: auto;
@@ -428,16 +441,57 @@ h3 {
 .investors-search .form-control.form-select {
   font-family: 'Work Sans', sans-serif;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 18px;
+  line-height: 21px;
   color: #000;
-  height: 50px;
+  height: 70px;
   padding-left: 20px;
   padding-right: 20px;
   background-image: url("../images/dropdown.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
   background-size: 12px 6px;
+}
+
+.investors-search .clear-filter {
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.investors-search .clear-filter img {
+  margin-right: 6px;
+}
+
+.investors-search .tags-area {
+  width: calc(100% - 119px);
+}
+
+.investors-search .tags-area .tag {
+  display: inline-block;
+  margin: 0 10px 10px 0;
+  background: #F4F4F4;
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 5px 8px;
+  font-size: 14px;
+  color: #000;
+}
+
+.investors-search .tags-area .tag .value {
+  padding-right: 15px;
+}
+
+.investors-search .tags-area .tag:after {
+  content: '+';
+  display: inline-block;
+  transform: rotate(45deg);
+  margin-left: 0px;
+}
+
+.investors-search .tags-area .tag:hover {
+  background: #114FF5;
+  color: #fff;
 }
 
 .investors-list .result-num {
@@ -658,6 +712,9 @@ h3 {
   align-items: center;
   position: relative;
   margin: 0 auto 10px auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .form-field .upload-img input {
@@ -1087,12 +1144,21 @@ h3 {
   font-size: 14px;
   line-height: 16px;
   color: #000;
+  position: relative;
 }
 
 #add-company .modal-dialog .modal-content .add-company .file-attach span {
   width: calc(100% - 25px);
   text-align: center;
   display: inline-block;
+}
+
+#add-company .modal-dialog .modal-content .add-company .file-attach .form-control {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
 }
 
 #add-company .modal-dialog .modal-content .add-company .img-size {

@@ -6,16 +6,16 @@
     } */
     .select2-container--default .select2-selection--multiple {
         border: 1px solid rgba(0, 0, 0, 0.1);
-        border-radius: 42px;
+        border-radius: 42px !important;
         box-shadow: none !important;
         outline: none !important;
         transition: all 0.3s ease;
         font-family: 'Work Sans', sans-serif;
         font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 18px;
+        line-height: 21px;
         color: $dark;
-        min-height: 50px;
+        min-height: 70px;
         padding-left: 20px;
         padding-right: 20px;
         background-image: url("../images/dropdown.svg");
@@ -24,6 +24,9 @@
         background-size: 12px 6px;
         white-space: nowrap;
         overflow: hidden;
+        display: flex;
+        align-items: center;
+        padding-top: 0;
     }
     .select2-container--default .select2-selection--multiple .select2-selection__choice {
         margin-top: 5px;
@@ -54,18 +57,25 @@
         display: inline-block;
         padding-left: 3px;
     }
+    .select2-container .select2-selection--multiple .select2-selection__rendered {
+        display: none !important;
+    }
+    .select2-container--default .select2-search--inline .select2-search__field {
+        margin-top: 0;
+    }
 }
 
 .investors {
     padding-top: 55px;
     padding-bottom: 209px;
     &-search {
-        margin-top: 24px;
         max-width: 762px;
-        margin: 24px auto;
-        .col-6,
+        margin: 24px auto 90px auto;
         .col-12 {
-            margin-bottom: 46px;
+            margin-bottom: 25px;
+        }
+        .col-6 {
+            margin-bottom: 17px;
         }
         .form-control {
             border: 1px solid rgba(0, 0, 0, 0.1);
@@ -81,7 +91,7 @@
                 padding-left: 54px;
                 background-position: left 23px center;
                 background-size: 16px;
-                height: 50px;
+                height: 70px;
                 max-width: 762px;
                 margin-right: auto;
                 margin-left: auto;
@@ -95,16 +105,50 @@
             &.form-select {
                 font-family: 'Work Sans', sans-serif;
                 font-weight: 500;
-                font-size: 16px;
-                line-height: 19px;
+                font-size: 18px;
+                line-height: 21px;
                 color: $dark;
-                height: 50px;
+                height: 70px;
                 padding-left: 20px;
                 padding-right: 20px;
                 background-image: url("../images/dropdown.svg");
                 background-repeat: no-repeat;
                 background-position: right 20px center;
                 background-size: 12px 6px;
+            }
+        }
+        .clear-filter {
+            font-size: 14px;
+            line-height: 16px;
+            color: #000000;
+            img {
+                margin-right: 6px;
+            }
+        }
+        .tags-area {
+            width: calc(100% - 119px);
+            .tag {
+                display: inline-block;
+                margin: 0 10px 10px 0;
+                background: $bg;
+                text-decoration: none;
+                border-radius: 30px;
+                padding: 5px 8px;
+                font-size: 14px;
+                color: #000;
+                .value {
+                    padding-right: 15px;
+                }
+                &:after {
+                    content: '+';
+                    display: inline-block;
+                    transform: rotate(45deg);
+                    margin-left: 0px;
+                }
+                &:hover {
+                    background: $blue;
+                    color: #fff
+                }
             }
         }
     }

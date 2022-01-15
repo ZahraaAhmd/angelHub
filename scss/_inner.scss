@@ -90,6 +90,9 @@
         align-items: center;
         position: relative;
         margin: 0 auto 10px auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
         input {
             position: absolute;
             opacity: 0;
@@ -498,10 +501,18 @@
                     font-size: 14px;
                     line-height: 16px;
                     color: #000;
+                    position: relative;
                     span {
                         width: calc(100% - 25px);
                         text-align: center;
                         display: inline-block;
+                    }
+                    .form-control {
+                        opacity: 0;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        height: 100%
                     }
                 }
                 .img-size {

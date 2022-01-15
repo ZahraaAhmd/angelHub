@@ -10,26 +10,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
     <link rel="stylesheet" type="text/css" href="css/fontawsome.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Angel hub | Home</title>
-
 </head>
 
-<body>
+<body class="home-body">
     <!-- start header -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light d-flex d-sm-none">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="InvestorList.html"><img src="images/arrow-left.svg" class="me-3 back-home">Angels<strong>Hub</strong></a>
+            <a class="navbar-brand" href="InvestorList.html">Angels<strong>Hub</strong></a>
             <button class="navbar-toggler collapsed upper" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
+            <span></span><span></span><span></span>
+          </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="d-flex d-md-none head">
                     More <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span></span><span></span><span></span>
-                  </button>
+                        <span></span><span></span><span></span>
+                      </button>
                 </div>
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item active d-block d-md-none">
@@ -62,292 +62,367 @@
         </div>
     </nav>
 
-    <form action="https://getform.io/f/ed217b98-b65f-47cd-ad10-64916c383ac7" class="needs-validation" id="form-wrapper" method="post" name="form-wrapper" enctype="multipart/form-data">
-
-        <section class="investor-form">
-            <div class="header-block d-none d-sm-block">
-                <a class="navbar-brand" href="InvestorList.html">Angels<strong>Hub</strong></a>
-                <div class="text-center">
-                    <a href="InvestorList.html" class="close-form"><img src="images/close.svg"></a>
-                </div>
+    <!-- start investors list section -->
+    <section class="investors">
+        <div class="container">
+            <div class="text-center">
+                <h1>Investor List</h1>
+                <p class="text-gray font-20 pb-0"> A list of hand-picked investors </p>
             </div>
-
-            <div class="container">
-
-                <!-- FORMS -->
-                <div>
-
-                    <div id="qbox-container">
-
-                        <div id="steps-container">
-                            <div class="step">
-                                <h2>Start discovering today! and join as investor</h2>
-                                <div class="progress">
-                                    <div aria-valuemax="100" aria-valuenow="20" class="progress-bar  progress-bar-animated bg-primary" role="progressbar" style="width: 20%"></div>
-                                </div>
-                                <div class="form-field">
-                                    <div class="mb-3">
-                                        <label class="form-label">What is your full name?</label>
-                                        <input type="text" class="form-control no-border" placeholder="EX.Jane Cooper" name="Investor-Name">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label class="form-label">What’s your email address?</label>
-                                        <input type="email" name="Email" class="form-control no-border" placeholder="Name@domain.com">
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <label class="form-label">What’s your country?</label>
-                                        <select class="form-select form-control" name="Country">
-                                        <option selected>Choose country</option>
-                                        <option value="country1">country name</option>
-                                        <option value="country2">country name</option>
-                                        <option value="country3">country name</option>
-                                        <option value="country4">country name</option>
-                                        <option value="country5">country name</option>
-                                        <option value="country6">country name</option>
-                                        <option value="country7">country name</option>
-                                        <option value="country8">country name</option>
-                                    </select>
-
-                                    </div>
-                                    <div class="mb-3">
-                                        <label class="form-label">What’s your city?</label>
-                                        <select class="form-select form-control" name="City">
-                                            <option selected>Choose city</option>
-                                            <option value="city1">city name</option>
-                                            <option value="city2">city name</option>
-                                            <option value="city3">city name</option>
-                                            <option value="city4">city name</option>
-                                            <option value="city5">city name</option>
-                                            <option value="city6">city name</option>
-                                            <option value="city7">city name</option>
-                                            <option value="city8">city name</option>
-                                        </select>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label class="form-label">Tell us a little bit about yourself</label>
-                                        <textarea class="form-control no-border" placeholder="Type anything" name="info"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="step">
-                                <h2>Tell us about your investments goals</h2>
-                                <div class="progress">
-                                    <div aria-valuemax="100" aria-valuenow="40" class="progress-bar  progress-bar-animated bg-primary" role="progressbar" style="width: 40%"></div>
-                                </div>
-                                <div class="form-field">
-                                    <div class="mb-3 pb-3">
-                                        <label class="form-label">Pick the focused industires</label>
-                                        <select class="js-example-basic-multiple" multiple="multiple" name="industires[]">
-                                            <option>Fin-tech</option>
-                                            <option value="Health">Health</option>
-                                            <option value="Education">Education</option>
-                                            <option value="Industry Example3">Industry Example</option>
-                                            <option value="Industry Example4">Industry Example</option>
-                                            <option value="Industry Example5">Industry Example</option>
-                                            <option value="Industry Example6">Industry Example</option>
-                                            <option value="Industry Example7">Industry Example</option>
-                                            <option value="Industry Example8">Industry Example</option>
-                                      </select>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label class="form-label mb-3">What’s your investemnt ticket size?</label>
-                                        <div class="form-check mb-3">
-                                            <input class="form-check-input" type="radio" name="investemnt" id="flexRadioDefault1" value="Less than $10K USD">
-                                            <label class="form-check-label" for="flexRadioDefault1">Less than $10K USD</label>
-                                        </div>
-                                        <div class="form-check mb-3">
-                                            <input class="form-check-input" type="radio" name="investemnt" id="flexRadioDefault2" value="Between $10K - $25K USD">
-                                            <label class="form-check-label" for="flexRadioDefault2">Between $10K - $25K USD</label>
-                                        </div>
-                                        <div class="form-check mb-3">
-                                            <input class="form-check-input" type="radio" name="investemnt" id="flexRadioDefault3" value="Between $25K - $100K USD">
-                                            <label class="form-check-label" for="flexRadioDefault3">Between $25K - $100K USD</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="investemnt" id="flexRadioDefault4" value="More than $100K USD">
-                                            <label class="form-check-label" for="flexRadioDefault4"> More than $100K USD</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="step">
-                                <h2>Add your social accounts</h2>
-                                <div class="progress">
-                                    <div aria-valuemax="100" aria-valuenow="60" class="progress-bar  progress-bar-animated bg-primary" role="progressbar" style="width: 60%"></div>
-                                </div>
-                                <div class="form-field">
-                                    <div class="mb-3 pb-3 text-center">
-                                        <div class="upload-img">
-                                            <input class="form-control" type="file" id="formFile" name="investor-img">
-                                            <span class="add-img">+</span>
-                                        </div>
-                                        <label for="formFile" class="form-label">Upload a profile picture</label>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label class="form-label">Add your Facebook profile</label>
-                                        <input class="form-control" type="text" placeholder="@" name="facebook-url">
-                                        <i class="fab fa-facebook-f form-icon"></i>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label class="form-label">Add your LinkedIn Profile</label>
-                                        <input class="form-control" type="text" placeholder="@" name="linkedin-url">
-                                        <i class="fab fa-linkedin-in form-icon"></i>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label class="form-label">Add your twitter account</label>
-                                        <input class="form-control" type="text" placeholder="@" name="twitter-url">
-                                        <i class="fab fa-twitter form-icon"></i>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label class="form-label">Add your company url</label>
-                                        <input class="form-control" type="text" placeholder="@" name="company-url">
-                                        <i class="fab fa-twitter form-icon"></i>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="step comany-step">
-                                <h2>Show people your previous investments</h2>
-                                <div class="progress">
-                                    <div aria-valuemax="100" aria-valuemin="25" aria-valuenow="80" class="progress-bar  progress-bar-animated bg-primary" role="progressbar" style="width: 80%"></div>
-                                </div>
-                                <!-- <div class="progress">
-                                    <div aria-valuemax="100" aria-valuemin="25" aria-valuenow="95" class="progress-bar  progress-bar-animated bg-primary" role="progressbar" style="width: 95%"></div>
-                                </div> -->
-                                <div class="form-field">
-                                    <div class="company-block d-flex justify-content-center align-items-center">
-                                        <div class="company-list d-none">
-                                            <h4 class="mb-3">List of investments</h4>
-
-                                            <div class="company">
-                                                <div class="row">
-                                                    <div class="col-sm-auto col-12">
-                                                        <img src="images/co.svg" class="company-logo">
-                                                    </div>
-                                                    <div class="col-sm col-12">
-                                                        <div class="company-info">Startup Name - <span>CoLegend</span></div>
-                                                        <div class="company-info">Investment Location - <span>Cairo, Egypt</span></div>
-                                                        <div class="company-info">Investment Date - <span>20 July 2021</span></div>
-                                                        <div class="company-info"><img src="images/link.svg">http://co-legend.today/</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="company">
-                                                <div class="row">
-                                                    <div class="col-sm-auto col-12">
-                                                        <img src="images/co.svg" class="company-logo">
-                                                    </div>
-                                                    <div class="col-sm col-12">
-                                                        <div class="company-info">Startup Name - <span>CoLegend</span></div>
-                                                        <div class="company-info">Investment Location - <span>Cairo, Egypt</span></div>
-                                                        <div class="company-info">Investment Date - <span>20 July 2021</span></div>
-                                                        <div class="company-info"><img src="images/link.svg">http://co-legend.today/</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="company">
-                                                <div class="row">
-                                                    <div class="col-sm-auto col-12">
-                                                        <img src="images/co.svg" class="company-logo">
-                                                    </div>
-                                                    <div class="col-sm col-12">
-                                                        <div class="company-info">Startup Name - <span>CoLegend</span></div>
-                                                        <div class="company-info">Investment Location - <span>Cairo, Egypt</span></div>
-                                                        <div class="company-info">Investment Date - <span>20 July 2021</span></div>
-                                                        <div class="company-info"><img src="images/link.svg">http://co-legend.today/</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="no-company">
-                                            <img src="images/no-company.svg"> No companies to show yet
-                                        </div>
-                                        <button class="btn btn-white add-company mb-3" data-bs-toggle="modal" data-bs-target="#add-company">+ Add company</button>
-                                    </div>
-
-                                    <label class="form-label mb-4">Please add at least 1 previous investement to be contunie </label>
-                                </div>
-                            </div>
+            <div class="investors-search">
+                <form id="investors-search">
+                    <div class="row">
+                        <div class="col-12">
+                            <input type="search" class="form-control search-input" placeholder="Search investors by name...">
                         </div>
-                        <div id="q-box__buttons">
-
-                            <button id="next-btn" type="button" class="btn btn-primary">Next</button>
-                            <button id="submit-btn" type="submit" class="btn btn-primary disabled" aria-disabled="true">Complete</button>
-                            <button id="prev-btn" type="button" class="btn-prev">Go Back</button>
-                        </div>
-
                     </div>
-                </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <select class="select2" multiple="multiple" data-placeholder="Industry Focused">
+                                <optgroup label="CHOOSE INDUSTRY">
+                                    <option>Fin-tech</option>
+                                    <option value="1">Health</option>
+                                    <option value="2">Education</option>
+                                    <option value="3">Industry Example</option>
+                                    <option value="4">Industry Example</option>
+                                    <option value="5">Industry Example</option>
+                                    <option value="6">Industry Example</option>
+                                    <option value="7">Industry Example</option>
+                                    <option value="8">Industry Example</option>
+                                </optgroup>
+                                
+                              </select>
+                        </div>
+                        <div class="col-6">
+                            <select class="select2" multiple="multiple" data-placeholder="Investment Ticket">
+                                <option>$10K USD - $25K USD</option>
+                                <option value="1">$25K USD - $50K USD</option>
+                                <option value="2">$50K USD - $100K USD</option>
+                                <option value="3">$100K USD - $250K USD</option>
+                                <option value="4">Above $250K USD</option>
+                              </select>
+                        </div>
+                    </div>
 
-            </div>
+                    <div class="d-flex justify-content-between filter-footer">
+                        <div class="tags-area">
+                            <ul>
 
+                            </ul>
 
-
-        </section>
-        <div class="modal fade" id="add-company" tabindex="-1" aria-labelledby="addCompanyLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        <div class="add-company form-field">
-                            <h4>Add company</h4>
-                            <div class="mb-3">
-                                <label class="form-label">Name of the company</label>
-                                <input type="text" class="form-control" placeholder="EX. Hydrastudioz" name="company-name">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Date of investment</label>
-                                <input type="date" class="form-control" placeholder="dd/mm/yyyy" name="investment-date" value="">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Where is the company based?</label>
-                                <select class="form-select form-control" name="company-based">
-                                <option selected>Choose country</option>
-                                <option value="1">country name</option>
-                                <option value="2">country name</option>
-                                <option value="3">country name</option>
-                                <option value="4">country name</option>
-                                <option value="5">country name</option>
-                                <option value="6">country name</option>
-                                <option value="7">country name</option>
-                                <option value="8">country name</option>
-                            </select>
-                            </div>
-                            <div class="mb-3 file-attach">
-                                <input class="form-control form-control-lg" id="formFileLg" type="file" name="company-logo">
-                                <img src="images/attach.svg">
-                                <span>Attach company logo</span>
-                            </div>
-                            <div class="img-size pb-3 mb-3">Minumim size W 200 px ~ H 200 px</div>
-
-                            <button class="btn btn-primary company-form" data-bs-dismiss="modal" aria-label="Close">Add</button>
                         </div>
 
+                        <!-- <span class="clear-filter"><img src="images/clear-filter.svg">Clear all fitlers </span> -->
+                    </div>
+
+                </form>
+            </div>
+
+            <!-- start list block -->
+            <div class="investors-list">
+                <div class="investor">
+                    <div class="row">
+                        <div class="col-md col-12">
+                            <div class="list-head">
+                                <div class="row">
+                                    <div class="col-auto pe-0">
+                                        <img src="images/avatar.jpg" class="investor-img">
+                                    </div>
+                                    <div class="col">
+                                        <h3>Khaled Alsiari</h3>
+                                        <p>Cairo, Egypt</p>
+                                    </div>
+                                </div>
+                                <div class="about-investor d-block d-md-none mt-3">
+                                    <p>
+                                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="list-body">
+                                <div class="row">
+                                    <div class="col-sm-5 col-12">
+                                        <div class="tag-title">INDUSTRY FOCUSED</div>
+                                        <span class="small-tag">Fin-tech</span>
+                                        <span class="small-tag">Health</span>
+                                    </div>
+                                    <div class="col-sm-7 col-12 ps-md-4">
+                                        <div class="tag-title">INVESTMENT GOALS</div>
+                                        <span class="small-tag">$25K ~ 50K USD</span>
+                                        <span class="small-tag">PRE-SEED</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tag-title">Khales’s Investments</div>
+                                        <span class="small-tag"><img src="images/co.svg"></span>
+                                        <span class="small-tag"><img src="images/sary.svg"></span>
+                                        <span class="small-tag"><img src="images/Hydra.svg"></span>
+                                        <span class="small-tag"><img src="images/co.svg"></span>
+                                        <span class="more-logos">+3 more</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-auto col-12">
+                            <a href="profile.html" class="btn btn-outline-secondary">See Profile <img src="images/arrow-up-right.svg"></a>
+                        </div>
                     </div>
 
                 </div>
+                <div class="investor">
+                    <div class="row">
+                        <div class="col-md col-12">
+                            <div class="list-head">
+                                <div class="row">
+                                    <div class="col-auto pe-0">
+                                        <img src="images/avatar.jpg" class="investor-img">
+                                    </div>
+                                    <div class="col">
+                                        <h3>Khaled Alsiari</h3>
+                                        <p>Cairo, Egypt</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-body">
+                                <div class="row">
+                                    <div class="col-sm-5 col-12">
+                                        <div class="tag-title">INDUSTRY FOCUSED</div>
+                                        <span class="small-tag">Fin-tech</span>
+                                        <span class="small-tag">Health</span>
+                                    </div>
+                                    <div class="col-sm-7 col-12 ps-md-4">
+                                        <div class="tag-title">INVESTMENT GOALS</div>
+                                        <span class="small-tag">$25K ~ 50K USD</span>
+                                        <span class="small-tag">PRE-SEED</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tag-title">Khales’s Investments</div>
+                                        <span class="small-tag"><img src="images/co.svg"></span>
+                                        <span class="small-tag"><img src="images/sary.svg"></span>
+                                        <span class="small-tag"><img src="images/Hydra.svg"></span>
+                                        <span class="small-tag"><img src="images/co.svg"></span>
+                                        <span class="more-logos">+3 more</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-auto col-12">
+                            <a href="profile.html" class="btn btn-outline-secondary">See Profile <img src="images/arrow-up-right.svg"></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="investor">
+                    <div class="row">
+                        <div class="col-md col-12">
+                            <div class="list-head">
+                                <div class="row">
+                                    <div class="col-auto pe-0">
+                                        <img src="images/avatar.jpg" class="investor-img">
+                                    </div>
+                                    <div class="col">
+                                        <h3>Khaled Alsiari</h3>
+                                        <p>Cairo, Egypt</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-body">
+                                <div class="row">
+                                    <div class="col-sm-5 col-12">
+                                        <div class="tag-title">INDUSTRY FOCUSED</div>
+                                        <span class="small-tag">Fin-tech</span>
+                                        <span class="small-tag">Health</span>
+                                    </div>
+                                    <div class="col-sm-7 col-12 ps-md-4">
+                                        <div class="tag-title">INVESTMENT GOALS</div>
+                                        <span class="small-tag">$25K ~ 50K USD</span>
+                                        <span class="small-tag">PRE-SEED</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tag-title">Khales’s Investments</div>
+                                        <span class="small-tag"><img src="images/co.svg"></span>
+                                        <span class="small-tag"><img src="images/sary.svg"></span>
+                                        <span class="small-tag"><img src="images/Hydra.svg"></span>
+                                        <span class="small-tag"><img src="images/co.svg"></span>
+                                        <span class="more-logos">+3 more</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-auto col-12">
+                            <a href="profile.html" class="btn btn-outline-secondary">See Profile <img src="images/arrow-up-right.svg"></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="investor">
+                    <div class="row">
+                        <div class="col-md col-12">
+                            <div class="list-head">
+                                <div class="row">
+                                    <div class="col-auto pe-0">
+                                        <img src="images/avatar.jpg" class="investor-img">
+                                    </div>
+                                    <div class="col">
+                                        <h3>Khaled Alsiari</h3>
+                                        <p>Cairo, Egypt</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-body">
+                                <div class="row">
+                                    <div class="col-sm-5 col-12">
+                                        <div class="tag-title">INDUSTRY FOCUSED</div>
+                                        <span class="small-tag">Fin-tech</span>
+                                        <span class="small-tag">Health</span>
+                                    </div>
+                                    <div class="col-sm-7 col-12 ps-md-4">
+                                        <div class="tag-title">INVESTMENT GOALS</div>
+                                        <span class="small-tag">$25K ~ 50K USD</span>
+                                        <span class="small-tag">PRE-SEED</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tag-title">Khales’s Investments</div>
+                                        <span class="small-tag"><img src="images/co.svg"></span>
+                                        <span class="small-tag"><img src="images/sary.svg"></span>
+                                        <span class="small-tag"><img src="images/Hydra.svg"></span>
+                                        <span class="small-tag"><img src="images/co.svg"></span>
+                                        <span class="more-logos">+3 more</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-auto col-12">
+                            <a href="profile.html" class="btn btn-outline-secondary">See Profile <img src="images/arrow-up-right.svg"></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="investor">
+                    <div class="row">
+                        <div class="col-md col-12">
+                            <div class="list-head">
+                                <div class="row">
+                                    <div class="col-auto pe-0">
+                                        <img src="images/avatar.jpg" class="investor-img">
+                                    </div>
+                                    <div class="col">
+                                        <h3>Khaled Alsiari</h3>
+                                        <p>Cairo, Egypt</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-body">
+                                <div class="row">
+                                    <div class="col-sm-5 col-12">
+                                        <div class="tag-title">INDUSTRY FOCUSED</div>
+                                        <span class="small-tag">Fin-tech</span>
+                                        <span class="small-tag">Health</span>
+                                    </div>
+                                    <div class="col-sm-7 col-12 ps-md-4">
+                                        <div class="tag-title">INVESTMENT GOALS</div>
+                                        <span class="small-tag">$25K ~ 50K USD</span>
+                                        <span class="small-tag">PRE-SEED</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tag-title">Khales’s Investments</div>
+                                        <span class="small-tag"><img src="images/co.svg"></span>
+                                        <span class="small-tag"><img src="images/sary.svg"></span>
+                                        <span class="small-tag"><img src="images/Hydra.svg"></span>
+                                        <span class="small-tag"><img src="images/co.svg"></span>
+                                        <span class="more-logos">+3 more</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-auto col-12">
+                            <a href="profile.html" class="btn btn-outline-secondary">See Profile <img src="images/arrow-up-right.svg"></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="investor">
+                    <div class="row">
+                        <div class="col-md col-12">
+                            <div class="list-head">
+                                <div class="row">
+                                    <div class="col-auto pe-0">
+                                        <img src="images/avatar.jpg" class="investor-img">
+                                    </div>
+                                    <div class="col">
+                                        <h3>Khaled Alsiari</h3>
+                                        <p>Cairo, Egypt</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-body">
+                                <div class="row">
+                                    <div class="col-sm-5 col-12">
+                                        <div class="tag-title">INDUSTRY FOCUSED</div>
+                                        <span class="small-tag">Fin-tech</span>
+                                        <span class="small-tag">Health</span>
+                                    </div>
+                                    <div class="col-sm-7 col-12 ps-md-4">
+                                        <div class="tag-title">INVESTMENT GOALS</div>
+                                        <span class="small-tag">$25K ~ 50K USD</span>
+                                        <span class="small-tag">PRE-SEED</span>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tag-title">Khales’s Investments</div>
+                                        <span class="small-tag"><img src="images/co.svg"></span>
+                                        <span class="small-tag"><img src="images/sary.svg"></span>
+                                        <span class="small-tag"><img src="images/Hydra.svg"></span>
+                                        <span class="small-tag"><img src="images/co.svg"></span>
+                                        <span class="more-logos">+3 more</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-auto col-12">
+                            <a href="profile.html" class="btn btn-outline-secondary">See Profile <img src="images/arrow-up-right.svg"></a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
+
         </div>
-    </form>
+    </section>
+
+    <!-- start footer -->
+    <footer>
+        <div class="container  text-center">
+            <div class="row">
+                <div class="col-sm-6 col-12">
+                    <div class="contact-us">
+                        <img src="images/mail.svg">
+                        <p>Have Something to say?</p>
+                        <h3>Info@angelhub.com</h3>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-12">
+                    <div class="contact-us">
+                        <img src="images/map-pin.svg">
+                        <p>Where are we?</p>
+                        <h3>Riyadh, Saudi Arabia</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-links">
+                Follow us
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="copyright">Copyright © 2021 AngelHub. All rights reserved.</div>
+        </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/jquery.nicescroll.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script>
-        $(".investor-form").mouseover(function() {
-            $(".form-field").getNiceScroll().resize();
-        });
-
-        $(".investor-form .form-field").niceScroll({
-            cursorcolor: "rgba(0, 0, 0, 0.2)",
-            background: "rgba(0, 0, 0, 0.06)",
-            cursorborder: "0",
-            cursorwidth: "10px"
-        });
-    </script>
+    <script src="js/test.js"></script>
 
 </body>
 
