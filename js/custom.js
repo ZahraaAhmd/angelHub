@@ -14,8 +14,7 @@ function select2tags() {
 
         $t.select2({
                 id: -1,
-                placeholder: placeholder,
-                allowClear: true
+                placeholder: placeholder
             })
             .on("select2:select", function(e) {
                 var selected = {
@@ -99,7 +98,7 @@ function findObjectByKey(array, key, value) {
 }
 
 select2tags();
-$(".clear-filter").click(function() {
+/*$(".clear-filter").click(function() {
     $(".tag").remove();
     $('.select2').val(null).trigger("change");
     $(".select2").select2("val", "");
@@ -107,7 +106,7 @@ $(".clear-filter").click(function() {
     $('.select2').html('').select2({ data: [{ id: '', text: '' }] });
 
 });
-/*const progress = (value) => {
+const progress = (value) => {
     document.getElementsByClassName('progress-bar')[0].style.width = `${value}%`;
 }*/
 
