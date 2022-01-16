@@ -4,10 +4,10 @@ $(".js-select2").select2({
     allowClear: false,
     tags: true
 });
+var tags = []
 
 function select2tags() {
-    var tags = [],
-        placeholder = '';
+    var placeholder = '';
 
     $(".select2").each(function(i) {
         $t = $(this).attr("data-select", i);
@@ -71,7 +71,16 @@ function select2tags() {
         values.splice(values.indexOf(selected.value), 1);
 
         $('select[data-select="' + selected.select + '"]').val(values).trigger('change');
-
+        $(this).each(function() {
+            if (tags.length === 1) {
+                $(".tag").click(function() {
+                    $(".investors-search .filter-footer").addClass('hide-filter');
+                });
+            }
+            if (tags.length === 0) {
+                $(".investors-search .filter-footer").addClass('hide-filter');
+            }
+        });
         /* val = values[0] == undefined ? placeholder : values[0] + ' (' + values.length + ')'
         $('select[data-select="' + selected.select + '"]').next().find('.select2-selection__custom').html(val);
 */
@@ -83,7 +92,7 @@ function select2tags() {
     // DISPLAY TAGS
     function displayTags() {
         $(".tags-area").html("");
-
+        $(".investors-search .filter-footer").removeClass('hide-filter');
         for (i = 0; i < tags.length; i++) {
             $('<a href="#" class="tag" data-select="' + tags[i].select + '"><span class="value">' + tags[i].value + "</span></a>").appendTo($(".tags-area"));
         }
@@ -104,15 +113,17 @@ function findObjectByKey(array, key, value) {
 select2tags();
 $(".investors-search .col-6:first-child .select2-selection__custom").html("Industry Focused");
 $(".investors-search .col-6:last-child .select2-selection__custom").html("Investment Ticket");
-/*$(".clear-filter").click(function() {
+$(".clear-filter").click(function() {
+    $(".investors-search .filter-footer").addClass('hide-filter');
+    tags = [];
     $(".tag").remove();
     $('.select2').val(null).trigger("change");
     $(".select2").select2("val", "");
     $('.select2-selection__custom').empty();
     $('.select2').html('').select2({ data: [{ id: '', text: '' }] });
-
 });
-const progress = (value) => {
+
+/*const progress = (value) => {
     document.getElementsByClassName('progress-bar')[0].style.width = `${value}%`;
 }*/
 

@@ -47,7 +47,7 @@
         .navbar-toggler {
             width: 35px;
             height: 35px;
-            background: #F4F4F4;
+            background: transparent;
             border-radius: 50%;
             border: 0;
             padding: 0;
@@ -56,44 +56,8 @@
             justify-content: space-evenly;
             align-items: center;
             flex-direction: column;
-            padding: 7px 0;
+            padding: 0;
             box-shadow: none !important;
-            span {
-                width: 22px;
-                height: 2px;
-                background: #000000;
-                display: block;
-                &:first-child {
-                    transform: translate(0px, 5px) rotate( -45deg) scalex(1);
-                }
-                &:nth-child(2) {
-                    width: 0;
-                }
-                &:last-child {
-                    width: 22px;
-                    transform: translate(0px, -6px) rotate( 45deg) scalex(1);
-                }
-            }
-            &.collapsed {
-                span {
-                    &:first-child {
-                        transform: translate(0px, 0px) rotate( 0deg) scalex(1);
-                    }
-                    &:nth-child(2) {
-                        width: 18px;
-                    }
-                    &:last-child {
-                        width: 15px;
-                        transform: translate(0px, 0px) rotate(0deg) scalex(1);
-                    }
-                }
-            }
-            &:hover {
-                background: $blue;
-                span {
-                    background: #fff;
-                }
-            }
         }
         .upper:not(.collapsed)::after {
             content: "";
@@ -114,6 +78,8 @@
             width: 300px;
             padding: 40px 24px 70px 24px;
             z-index: 10;
+            transform: translateX(300px);
+            transition: all 0.3s ease;
             .head {
                 display: flex;
                 align-items: center;
@@ -128,6 +94,7 @@
                 color: #000;
             }
             &.show {
+                transform: translateX(0px);
                 .social-nav {
                     position: fixed;
                     bottom: 40px;
@@ -150,6 +117,10 @@
             margin-top: 45px;
         }
     }
+    .investors,
+    .faq {
+        border-radius: 0px 0px 50px 50px;
+    }
     .investors {
         padding-top: 25px;
         padding-bottom: 110px;
@@ -167,6 +138,7 @@
         align-items: center;
         height: 48px;
         margin-top: 16px;
+        margin-bottom: 24px;
     }
     .investors-list .investor .list-body .col-12 {
         margin-bottom: 24px;
@@ -275,8 +247,12 @@
         font-size: 16px;
         line-height: 19px;
     }
-    .tags-area {
+    .filter-footer {
         margin-top: 17px;
+        flex-flow: column;
+        .clear-filter {
+            text-align: right;
+        }
     }
     .investors-search {
         margin-bottom: 24px;
