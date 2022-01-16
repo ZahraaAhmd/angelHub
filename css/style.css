@@ -2030,6 +2030,9 @@ footer .copyright {
   .filter-footer .clear-filter {
     text-align: right;
   }
+  .investors-search .tags-area {
+    width: 100%;
+  }
   .investors-search {
     margin-bottom: 24px;
   }
