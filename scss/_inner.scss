@@ -999,9 +999,6 @@
 /**** about us page ****/
 
 .about-angelhub {
-    border-radius: 100px;
-    position: relative;
-    z-index: 2;
     background: #fff;
     padding-bottom: 20px;
     .container-fluid {
@@ -1017,6 +1014,14 @@
         margin: 0 auto 40px auto;
         &:first-child {
             margin-bottom: 80px;
+        }
+    }
+    &.about2 {
+        border-radius: 100px;
+        position: relative;
+        z-index: 2;
+        .container-fluid {
+            border-radius: 0 0 100px 100px;
         }
     }
 }
