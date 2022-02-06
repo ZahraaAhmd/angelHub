@@ -66,4 +66,28 @@ footer {
         color: rgba(#fff, 0.77);
         margin-bottom: 0px;
     }
+    &.footer2 {
+        background: #fff;
+        margin-top: 0;
+        padding-top: 0;
+        padding-bottom: 70px;
+        .contact-us {
+            background: #F3F6FD;
+            p {
+                color: rgba(#000, 0.6);
+            }
+            h3 {
+                color: #000
+            }
+        }
+        .contact-links {
+            color: #000;
+            a {
+                color: #000;
+            }
+        }
+        .copyright {
+            color: rgba(#000, 0.6);
+        }
+    }
 }

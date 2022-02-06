@@ -1702,6 +1702,33 @@ h3 {
   font-size: 14px;
 }
 
+/**** about us page ****/
+.about-angelhub {
+  border-radius: 100px;
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  padding-bottom: 20px;
+}
+
+.about-angelhub .container-fluid {
+  background: url("../images/about-bg.png") no-repeat;
+  background-size: 100% auto;
+  padding-top: 106px;
+  width: 100%;
+  max-width: 1390px;
+}
+
+.about-angelhub p {
+  color: rgba(0, 0, 0, 0.6);
+  max-width: 539px;
+  margin: 0 auto 40px auto;
+}
+
+.about-angelhub p:first-child {
+  margin-bottom: 80px;
+}
+
 /**** footer style ****/
 footer {
   font-family: 'Work Sans', sans-serif;
@@ -1777,6 +1804,37 @@ footer .copyright {
   letter-spacing: -0.06em;
   color: rgba(255, 255, 255, 0.77);
   margin-bottom: 0px;
+}
+
+footer.footer2 {
+  background: #fff;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 70px;
+}
+
+footer.footer2 .contact-us {
+  background: #F3F6FD;
+}
+
+footer.footer2 .contact-us p {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+footer.footer2 .contact-us h3 {
+  color: #000;
+}
+
+footer.footer2 .contact-links {
+  color: #000;
+}
+
+footer.footer2 .contact-links a {
+  color: #000;
+}
+
+footer.footer2 .copyright {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 /*** media query styles ****/

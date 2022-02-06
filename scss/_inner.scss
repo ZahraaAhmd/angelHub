@@ -994,3 +994,29 @@
         }
     }
 }
+
+
+/**** about us page ****/
+
+.about-angelhub {
+    border-radius: 100px;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    padding-bottom: 20px;
+    .container-fluid {
+        background: url("../images/about-bg.png") no-repeat;
+        background-size: 100% auto;
+        padding-top: 106px;
+        width: 100%;
+        max-width: 1390px;
+    }
+    p {
+        color: rgba(0, 0, 0, 0.6);
+        max-width: 539px;
+        margin: 0 auto 40px auto;
+        &:first-child {
+            margin-bottom: 80px;
+        }
+    }
+}
